@@ -1,0 +1,24 @@
+.padding-p {
+  padding: 10px 10px 10px 8px;
+}
+
+.product-box {
+  background-color: #fff;
+  border: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.border-top-none {
+  border-top: none;
+}
+.product-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: rgb(238, 226, 226);
+
+  margin-top: 10px;
+
+  & > img {
+    max-width: 100%;
+  }
+}
