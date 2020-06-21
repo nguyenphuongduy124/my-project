@@ -1,0 +1,21 @@
+.product-form {
+  font-size: 1.6rem;
+
+  input,
+  textarea,
+  label,
+  button {
+    font-size: 1.6rem;
+  }
+
+  .random-image {
+    .random-button {
+      margin-bottom: 1.6rem;
+    }
+    .product-image {
+      height: 30rem;
+      width: 30rem;
+      background-color: #eee;
+    }
+  }
+}

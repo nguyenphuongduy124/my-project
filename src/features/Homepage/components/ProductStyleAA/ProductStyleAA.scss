@@ -1,0 +1,118 @@
+.product-style-aa {
+  padding: 3rem;
+  &__inner {
+    display: flex;
+    & > div {
+      flex-grow: 1;
+      width: 50%;
+    }
+
+    &-left {
+      margin-right: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    &-right {
+      .product__brand {
+        margin-top: 0.8rem;
+        display: flex;
+        align-items: center;
+        height: 2.8rem;
+        span {
+          font-size: 1.4rem;
+          color: #f78c1b;
+          margin-left: 1rem;
+        }
+      }
+
+      .product__name {
+        height: 7rem;
+        font-size: 1.4rem;
+        text-align: left;
+
+        margin-top: 1rem;
+        font-weight: bold;
+        a {
+          color: #3c4a65;
+          display: block;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .product__price {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+
+        text-align: left;
+        .wrapper {
+          width: 100%;
+
+          .price-origin {
+            font-size: 1.1rem;
+            color: #3c4a65;
+            text-decoration: line-through;
+            margin-bottom: 0;
+          }
+
+          .price-current {
+            font-size: 2.4rem;
+            font-weight: bold;
+            color: #3c4a65;
+            margin-bottom: 0.6rem;
+          }
+
+          .price-save {
+            margin-bottom: 0.6rem;
+            label {
+              font-size: 1.2rem;
+              color: #fff;
+              font-weight: bold;
+              background-color: #cc4e00;
+
+              padding: 0.2rem 0.6rem;
+              margin: 0;
+            }
+          }
+
+          .shipping {
+            font-size: 1.1rem;
+            color: #3c4a65;
+            font-weight: 400;
+            margin-bottom: 0.6rem;
+          }
+
+          .add-to-cart {
+            font-size: 1.2rem;
+            margin-top: 1.6rem;
+
+            button {
+              font-weight: 600;
+              font-size: 1.2rem;
+              background-color: #ffa33a;
+              border: 1px solid #c60;
+
+              border-radius: 3px;
+              padding: 0.5rem 0.8rem;
+              text-transform: uppercase;
+              &:hover {
+                background-color: #f39834;
+              }
+
+              i {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

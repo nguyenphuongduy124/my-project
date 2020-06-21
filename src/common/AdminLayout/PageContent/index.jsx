@@ -5,21 +5,21 @@ import "./PageContent.scss";
 
 function PageContent(props) {
   return (
-    <div className="page-content-wrapper">
-      <div className="row p-2 header">
-        <div className="d-flex align-items-center mr-auto">
+    <div className="page-content-wrapper ">
+      <div className="row p-2 admin-header">
+        <div className="d-flex align-items-center mr-auto admin-header-left">
           <FontAwesomeIcon icon={faBars} size="2x" className="mr-3" />
-          <form class="form-inline">
+          <form className="form-inline">
             <input type="text" placeholder="Search..." />
           </form>
         </div>
 
-        <div className="d-flex align-items-center">
-          <div className="notify mr-3">
-            <FontAwesomeIcon icon={faEnvelope} />
+        <div className="d-flex align-items-center admin-header-right">
+          <div className="notify">
+            <FontAwesomeIcon icon={faEnvelope} className="icon-svg" />
             <span>3</span>
           </div>
-          <div className="notify mr-3">
+          <div className="notify">
             <FontAwesomeIcon icon={faBell} />
             <span>1</span>
           </div>
@@ -29,22 +29,22 @@ function PageContent(props) {
             className="rounded-circle mr-1"
             height="32px"
           />
-          <div class="btn-group">
+          <div className="btn-group">
             <button
               type="button"
-              class="btn dropdown-toggle shadow-none"
+              className="btn dropdown-toggle shadow-none username"
               data-toggle="dropdown"
             >
               Nguyen Duy
             </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <button class="dropdown-item" type="button">
+            <div className="dropdown-menu dropdown-menu-right">
+              <button className="dropdown-item" type="button">
                 Edit Account
               </button>
-              <button class="dropdown-item" type="button">
+              <button className="dropdown-item" type="button">
                 Log out
               </button>
-              <button class="dropdown-item" type="button">
+              <button className="dropdown-item" type="button">
                 Close
               </button>
             </div>
@@ -52,7 +52,7 @@ function PageContent(props) {
         </div>
       </div>
       <div className="row p-2 name">
-        <p className="h4">Dashboard</p>
+        <p className="h2">Dashboard</p>
       </div>
       {props.children}
     </div>

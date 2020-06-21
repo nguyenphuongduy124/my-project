@@ -1,0 +1,89 @@
+.slider {
+  .slider-top {
+    height: 26rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .navigation {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      padding: 10px;
+      transform: translateX(-50%);
+
+      input {
+        margin-right: 7px;
+      }
+    }
+    .slides {
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      width: 400%;
+      height: 100%;
+      transition: margin 0.6s;
+      a {
+        display: block;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      transform: translate(0, -50%);
+
+      transition: padding 500ms;
+
+      button {
+        font-size: 6rem;
+        border: none;
+        background: transparent;
+        outline: none;
+        i {
+          color: rgba($color: #eee, $alpha: 0.3);
+          transition: color 500ms;
+        }
+      }
+    }
+    &:hover .controls {
+      padding: 0 3rem;
+
+      button i {
+        color: rgba($color: #eee, $alpha: 0.8);
+      }
+    }
+  }
+
+  .slider-bottom {
+    display: flex;
+    margin-top: 8.7rem;
+    .banner {
+      a {
+        display: block;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .banner-left {
+      height: 10.8rem;
+      flex-grow: 2;
+      margin-right: 2rem;
+    }
+    .banner-right {
+      height: 10.8rem;
+      flex-grow: 1;
+    }
+  }
+}

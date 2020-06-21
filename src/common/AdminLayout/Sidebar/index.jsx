@@ -14,7 +14,7 @@ function Sidebar(props) {
       </div>
       <ul className="menu-sidebar">
         <li>
-          <Link to="/">
+          <Link to="/dashboard">
             <FontAwesomeIcon icon={faHome} className="fa-mr-1" />
             Dashboard
           </Link>

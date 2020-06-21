@@ -1,10 +1,14 @@
-.sidebar {
-  background-color: #33425a;
-  min-height: 100vh;
-  color: #f4f5f7;
-  padding: 0;
-}
+.admin-page {
+  font-size: 1.6rem;
 
-.page-content {
-  background-color: #f4f5f7;
+  .sidebar {
+    background-color: #33425a;
+    min-height: 100vh;
+    color: #f4f5f7;
+    padding: 0;
+  }
+
+  .page-content {
+    background-color: #f4f5f7;
+  }
 }

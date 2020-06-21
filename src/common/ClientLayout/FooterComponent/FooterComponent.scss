@@ -1,0 +1,114 @@
+.footer-section {
+  padding-top: 3rem;
+  background-color: #f4f5f7;
+  .footer-section-inner {
+    &__menus {
+      background-color: #33425a;
+      padding: 3rem 1.6rem;
+      display: flex;
+
+      .menu {
+        width: 25%;
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          font-size: 1.3rem;
+          li {
+            margin-bottom: 0.8rem;
+            a {
+              color: #fff;
+              font-weight: 300;
+              padding: 0.2rem 0;
+            }
+          }
+
+          & > li:first-child {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            margin-bottom: 1.6rem;
+          }
+        }
+      }
+    }
+
+    &__app {
+      padding: 1rem 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      & > div:first-child {
+        & > a:last-child {
+          border-right: none;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+          padding-right: 1rem;
+          border-right: 1px solid;
+
+          margin-right: 1rem;
+          span {
+            display: block;
+          }
+          & > span:first-child {
+            font-size: 1.2rem;
+            color: #222;
+            &:hover {
+              color: inherit;
+            }
+          }
+          & > span:last-child {
+            font-size: 1rem;
+            color: #222;
+            opacity: 0.8;
+          }
+        }
+      }
+      & > div:last-child {
+        a {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    &__conditions {
+      padding: 3rem 0 5rem 0;
+
+      background-color: #fff;
+      &_inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .condition-logos {
+          height: 6.2rem;
+          margin-bottom: 2rem;
+          a {
+            margin-right: 2.1rem;
+            img {
+              height: 100%;
+            }
+          }
+        }
+
+        .copyright {
+          font-size: 1.1rem;
+          margin-bottom: 2rem;
+        }
+
+        .social-logos {
+          height: 2.4rem;
+
+          a {
+            margin-right: 1.5rem;
+            img {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

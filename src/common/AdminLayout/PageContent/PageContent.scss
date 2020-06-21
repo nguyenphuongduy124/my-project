@@ -1,24 +1,37 @@
 .page-content-wrapper {
-  & > .header {
+  & > .admin-header {
     background-color: #fff;
     border-bottom: 1px solid #f4f5f7;
+    font-size: 1.6rem;
   }
+
   & > .name {
     background-color: #fff;
   }
-}
 
-.notify {
-  position: relative;
-  & > svg {
-    font-size: 1.3rem;
-  }
-  & > span {
-    position: absolute;
-    background-color: tomato;
-    padding: 0 4px;
-    color: #fff;
-    font-size: 0.8rem;
-    transform: translate(-30%, -50%);
+  .admin-header-right {
+    .notify {
+      margin-right: 2rem;
+      position: relative;
+      & > svg {
+        font-size: 2.1rem;
+      }
+      & > span {
+        position: absolute;
+        background-color: tomato;
+        padding: 0 4px;
+        color: #fff;
+        font-size: 0.8rem;
+        transform: translate(-30%, -50%);
+      }
+    }
+
+    .username {
+      font-size: 1.6rem;
+    }
+
+    .dropdown-menu-right {
+      font-size: 1.6rem;
+    }
   }
 }

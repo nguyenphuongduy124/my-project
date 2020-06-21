@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import AdminLayout from "../../common/AdminLayout";
 import { axiosDelete, axiosGet } from "../../services/axios";
 import { initProducts, removeProduct } from "../Product/productSlice";
+import "./Dashboard.scss";
 
 Dashboard.propTypes = {};
 
@@ -19,7 +20,7 @@ function Dashboard(props) {
         setProducts(res.data);
       }
     });
-  }, []);
+  }, [dispatch]);
 
   const renderProducts = (products) => {
     let xhtml = null;
@@ -30,7 +31,7 @@ function Dashboard(props) {
             {product.id}
           </th>
           <td className="align-middle">
-            <img src={product.image} width="50" />
+            <img src={product.image} width="50" alt="product" />
           </td>
           <td className="align-middle">{product.name}</td>
           <td className="align-middle">{product.categories.join(", ")}</td>
@@ -46,7 +47,7 @@ function Dashboard(props) {
             </button>
             <button
               type="button"
-              className="btn btn-sm btn-danger"
+              className="btn btn-md btn-danger"
               onClick={() => handleClickRemove(product)}
             >
               Remove

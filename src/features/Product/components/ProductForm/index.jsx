@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CATEGORIES } from "../../../../constants/global";
-
+import "./ProductForm.scss";
 ProductForm.propTypes = {};
 
 const randomImageUrl = () => {
@@ -13,7 +13,7 @@ const Category = (props) => {
   let isChecked =
     categories.findIndex((x) => x === category.name) >= 0 ? true : false;
   return (
-    <label class="checkbox-inline mr-4">
+    <label className="checkbox-inline mr-4">
       <input
         className="mr-2"
         type="checkbox"
@@ -40,7 +40,7 @@ function ProductForm(props) {
     if (productEdit) {
       setProduct(productEdit);
     }
-  }, []);
+  }, [productEdit]);
   function handleSubmit(event) {
     event.preventDefault();
     onHandleSubmitForm(product);
@@ -85,9 +85,9 @@ function ProductForm(props) {
   }
 
   return (
-    <div className="row">
+    <div className="row product-form">
       <div className="col-md-9 pr-3">
-        <p className="h5 mt-3">{isEdit ? "Edit product" : "Add new product"}</p>
+        <p className="h3 mt-3">{isEdit ? "Edit product" : "Add new product"}</p>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input
@@ -141,9 +141,9 @@ function ProductForm(props) {
               />
             </div>
           </div>
-          <div className="form-group">
+          <div className="form-group random-image">
             <label className="h6">Product Image</label>
-            <div>
+            <div className="random-button">
               <input
                 type="button"
                 className="btn btn-sm btn-success"
@@ -152,7 +152,7 @@ function ProductForm(props) {
               />
             </div>
             <div className="product-image">
-              <img src={product.image} />
+              <img src={product.image} alt="random" />
             </div>
           </div>
 

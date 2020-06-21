@@ -2,6 +2,7 @@ import React from "react";
 import "./AdminLayout.scss";
 import Sidebar from "./Sidebar";
 import PageContent from "./PageContent";
+import "../../assets/styles/bootstrap.min.css";
 
 function AdminLayout(props) {
   return (

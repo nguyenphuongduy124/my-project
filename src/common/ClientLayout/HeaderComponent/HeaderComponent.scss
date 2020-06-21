@@ -1,0 +1,193 @@
+$backgroundColor: #00283a;
+$orange: #fa9d28;
+$lightBlue: #00e2ff;
+$borderColor: #eee;
+$boldBlue: #2196f3;
+
+header.header {
+  .header-inner {
+    display: flex;
+    align-items: center;
+    background-color: $backgroundColor;
+    height: 10rem;
+    .menu-box {
+      i {
+        font-size: 3.2rem;
+        color: #fff;
+        padding: 20px;
+      }
+    }
+
+    .header-logo {
+      margin-right: 20px;
+      & a {
+        display: block;
+        & img {
+          height: 6.4rem;
+        }
+      }
+    }
+
+    .header-search {
+      width: 65rem;
+
+      .search-bar {
+        background-color: #fff;
+        height: 3.6rem;
+        border-radius: 5px;
+
+        display: flex;
+        align-items: center;
+
+        overflow: hidden;
+        form {
+          flex-grow: 1;
+
+          padding: 1rem;
+
+          input {
+            border: none;
+            outline: none;
+            font-size: 1.4rem;
+            width: 100%;
+          }
+        }
+        .keywords {
+          flex-grow: 1;
+          display: flex;
+          justify-content: flex-end;
+          padding: 1rem;
+          a {
+            padding: 0.2rem 0.4rem;
+            text-decoration: none;
+            margin-right: 0.5rem;
+            font-size: 1.4rem;
+
+            background-color: #f1f1f1;
+            border-radius: 2px;
+          }
+        }
+        .icon-search {
+          font-size: 3.2rem;
+          padding: 0 1rem;
+          border-left: 1px solid $borderColor;
+        }
+      }
+
+      .portals {
+        margin-top: 1rem;
+        a {
+          margin-right: 1.6rem;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+        .orange {
+          color: $orange;
+        }
+        .light-blue {
+          color: $lightBlue;
+        }
+      }
+    }
+
+    .header-right {
+      margin-left: 2rem;
+      flex-grow: 1;
+
+      a {
+        font-size: 3.6rem;
+        color: #fff;
+      }
+
+      &__top {
+        height: 3.6rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .sign-in {
+          margin-right: 3.4rem;
+          padding: 0.5rem;
+          border: 1px solid transparent;
+          a {
+            display: flex;
+            text-decoration: none;
+            i {
+              font-size: 3.6rem;
+              padding-right: 0.8rem;
+            }
+
+            p {
+              margin: 0;
+            }
+
+            p:first-child {
+              font-size: 1.1rem;
+              color: #ccc;
+            }
+            p:last-child {
+              font-size: 1.4rem;
+              font-weight: bold;
+            }
+          }
+
+          &:hover {
+            border: 1px solid rgba($color: #fff, $alpha: 0.1);
+          }
+        }
+
+        .cart {
+          margin-right: 2.4rem;
+        }
+
+        .dark-mode {
+          margin-right: 0.6rem;
+
+          input {
+            appearance: none;
+            width: 5rem;
+            height: 3rem;
+            background-color: #fff;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      &__bottom {
+        display: flex;
+        justify-content: flex-end;
+
+        margin-top: 1rem;
+        a {
+          font-size: 1.2rem;
+          text-decoration: none;
+          font-weight: bold;
+          margin-right: 2rem;
+        }
+
+        a:first-child {
+          span {
+            color: $boldBlue;
+          }
+        }
+
+        a:nth-child(2) {
+          span {
+            margin-right: 0.5rem;
+          }
+        }
+        a:nth-child(3) {
+          span:first-child {
+            margin-right: 0.5rem;
+          }
+          span:last-child {
+            margin-left: 0.5rem;
+          }
+        }
+        a:last-child {
+          margin-right: 0.9rem;
+        }
+      }
+    }
+  }
+}

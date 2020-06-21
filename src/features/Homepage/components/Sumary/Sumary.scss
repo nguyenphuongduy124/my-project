@@ -1,0 +1,123 @@
+.sumary {
+  padding: 1rem 3rem;
+  background-color: #fff;
+  &__title {
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 3.2rem;
+      color: #222;
+      font-weight: 400;
+    }
+  }
+
+  &__content {
+    margin-bottom: 2rem;
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #222;
+      font-style: italic;
+
+      margin-bottom: 1rem;
+    }
+    & > div {
+      display: flex;
+      .highlight {
+        flex-grow: 1;
+        text-align: center;
+        margin-left: -3rem;
+
+        & > div:first-child {
+          & > span:first-child {
+            font-size: 6.4rem;
+            color: #cc4e00;
+            font-weight: bold;
+          }
+          & > span:last-child {
+            font-size: 2.6rem;
+            color: #cc4e00;
+            font-weight: bold;
+          }
+        }
+        & > div:last-child {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &__signup {
+    padding: 1.2rem 3rem 1.6rem 3rem;
+    background-color: #f4f5f7;
+    &_inner {
+      display: flex;
+      align-items: center;
+      & > div {
+        margin-right: 2rem;
+      }
+      &_title {
+        & > p:first-child {
+          font-size: 2.4rem;
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+        }
+        & > p:last-child {
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+        }
+      }
+      &_form {
+        display: flex;
+        align-items: center;
+        & > div:first-child {
+          border: 1px solid;
+          height: 3.2rem;
+          display: flex;
+          align-items: center;
+
+          margin-right: 1rem;
+          background-color: #fff;
+          padding-right: 1rem;
+          span {
+            background-color: #fff;
+            font-size: 1.6rem;
+            padding: 0 1rem;
+          }
+          input {
+            border: none;
+            outline: none;
+            font-size: 1.2rem;
+          }
+        }
+        & > div:last-child {
+          height: 3.2rem;
+          input {
+            display: inline-block;
+            height: 100%;
+            border: 1px solid #849dc2;
+            background-color: #98c6ff;
+            border-radius: 3px;
+
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: 0 1rem;
+            color: #222;
+
+            &:hover {
+              background-color: #7fb2f3;
+            }
+          }
+        }
+      }
+
+      &_email-deals {
+        a {
+          font-size: 1.4rem;
+          text-decoration: underline;
+          color: #3b4a65;
+        }
+      }
+    }
+  }
+}
